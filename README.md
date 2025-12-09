@@ -9,7 +9,7 @@
 [![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/xx)
 [![Code](https://img.shields.io/badge/GitHub-Code-blue)](https://github.com/ali-vilab/Wan-Move)
 [![Model](https://img.shields.io/badge/HuggingFace-Model-yellow)](https://huggingface.co/Ruihang/Wan-Move-14B-480P)
-[![Model](https://img.shields.io/badge/ModelScope-Model-violet)](https://www.modelscope.cn/models/Ruihang/Wan-Move-14B-480P)
+[![Model](https://img.shields.io/badge/ModelScope-Model-violet)](https://modelscope.cn/models/churuihang/Wan-Move-14B-480P)
 [![Model](https://img.shields.io/badge/HuggingFace-MoveBench-cyan)](https://huggingface.co/datasets/Ruihang/MoveBench)
 [![Video](https://img.shields.io/badge/YouTube-Video-red)](https://www.youtube.com/watch?v=_5Cy7Z2NQJQ)
 [![Website](https://img.shields.io/badge/Demo-Page-bron)](https://ruihang-chu.github.io/Wan-Move.html)
@@ -97,7 +97,7 @@ pip install -r requirements.txt
 
 | Models       | Download Link                                                                                                                                           |    Notes                      |
 |--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|
-| Wan-Move-14B-480P      | 🤗 [Huggingface](https://huggingface.co/Ruihang/Wan-Move-14B-480P)      🤖 [ModelScope](https://www.modelscope.cn/models/Ruihang/Wan-Move-14B-480P)             | 5s 480P video generation
+| Wan-Move-14B-480P      | 🤗 [Huggingface](https://huggingface.co/Ruihang/Wan-Move-14B-480P)      🤖 [ModelScope](https://modelscope.cn/models/churuihang/Wan-Move-14B-480P)             | 5s 480P video generation
 
 
 Download models using huggingface-cli:
@@ -109,7 +109,7 @@ huggingface-cli download Ruihang/Wan-Move-14B-480P --local-dir ./Wan-Move-14B-48
 Download models using modelscope-cli:
 ``` sh
 pip install modelscope
-modelscope download Ruihang/Wan-Move-14B-480P --local_dir ./Wan-Move-14B-480P
+modelscope download churuihang/Wan-Move-14B-480P --local_dir ./Wan-Move-14B-480P
 ```
 #### Evaluation on MoveBench
 
