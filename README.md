@@ -10,7 +10,7 @@
 [![Code](https://img.shields.io/badge/GitHub-Code-blue)](https://github.com/ali-vilab/Wan-Move)
 [![Model](https://img.shields.io/badge/HuggingFace-Model-yellow)](https://huggingface.co/Ruihang/Wan-Move-14B-480P)
 [![Model](https://img.shields.io/badge/ModelScope-Model-violet)](https://www.modelscope.cn/models/Ruihang/Wan-Move-14B-480P)
-[![Model](https://img.shields.io/badge/HuggingFace-MoveBench-cyan)](https://huggingface.co/Ruihang/MoveBench)
+[![Model](https://img.shields.io/badge/HuggingFace-MoveBench-cyan)](https://huggingface.co/datasets/Ruihang/MoveBench)
 [![Video](https://img.shields.io/badge/YouTube-Video-red)](https://www.youtube.com/watch?v=_5Cy7Z2NQJQ)
 [![Website](https://img.shields.io/badge/Demo-Page-bron)](https://ruihang-chu.github.io/Wan-Move.html)
 
@@ -35,7 +35,7 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 
 ## 🔥 Latest News!!
 
-* Dec 1, 2025: 👋 We've released the [inference code](#quickstart), [model weights](https://huggingface.co/Ruihang/Wan-Move-14B-480P), and [MoveBench](https://huggingface.co/Ruihang/MoveBench) of Wan-Move.
+* Dec 1, 2025: 👋 We've released the [inference code](#quickstart), [model weights](https://huggingface.co/Ruihang/Wan-Move-14B-480P), and [MoveBench](https://huggingface.co/datasets/Ruihang/MoveBench) of Wan-Move.
 * Sep 18, 2025: 👋 Wan-Move has been accepted by NeurIPS 2025! 🎉🎉🎉
 
 
@@ -115,7 +115,7 @@ modelscope download Ruihang/Wan-Move-14B-480P --local_dir ./Wan-Move-14B-480P
 
 Download MoveBench from Hugging Face
 ``` sh
-huggingface-cli download Ruihang/MoveBench --local-dir ./MoveBench
+huggingface-cli download Ruihang/MoveBench --local-dir ./MoveBench --repo-type dataset
 ```
 
 > 💡Note:
