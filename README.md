@@ -12,7 +12,7 @@
 [![Model](https://img.shields.io/badge/ModelScope-Model-violet)](https://modelscope.cn/models/churuihang/Wan-Move-14B-480P)
 [![Model](https://img.shields.io/badge/HuggingFace-MoveBench-cyan)](https://huggingface.co/datasets/Ruihang/MoveBench)
 [![Video](https://img.shields.io/badge/YouTube-Video-red)](https://www.youtube.com/watch?v=_5Cy7Z2NQJQ)
-[![Website](https://img.shields.io/badge/Demo-Page-bron)](https://ruihang-chu.github.io/Wan-Move.html)
+[![Website](https://img.shields.io/badge/Demo-Page-bron)](https://wan-move.github.io/)
 
 <div align="center">
 
