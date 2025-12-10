@@ -6,7 +6,7 @@
 
 # Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
 
-[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/xx)
+[![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/2512.08765)
 [![Code](https://img.shields.io/badge/GitHub-Code-blue)](https://github.com/ali-vilab/Wan-Move)
 [![Model](https://img.shields.io/badge/HuggingFace-Model-yellow)](https://huggingface.co/Ruihang/Wan-Move-14B-480P)
 [![Model](https://img.shields.io/badge/ModelScope-Model-violet)](https://modelscope.cn/models/churuihang/Wan-Move-14B-480P)
@@ -22,7 +22,7 @@
 
 ## 💡 TLDR: Bring Wan I2V to SOTA fine-grained, point-level motion control!
 
-**Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance [[Paper](https://arxiv.org/abs/xxx)]** <br />
+**Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance [[Paper](https://arxiv.org/abs/2512.08765)]** <br />
 [Ruihang Chu](https://ruihang-chu.github.io/), [Yefei He](https://hexy.tech/), [Zhekai Chen](https://scholar.google.com/citations?user=_eZWcIMAAAAJ), [Shiwei Zhang](https://scholar.google.com/citations?user=ZO3OQ-8AAAAJ), [Xiaogang Xu](https://xuxiaogang.com/), [Bin Xia](https://zj-binxia.github.io/), [Dingdong Wang](https://scholar.google.com/citations?user=hRWxWiEAAAAJ), [Hongwei Yi](https://scholar.google.com/citations?user=ocMf7fQAAAAJ), [Xihui Liu](https://xh-liu.github.io/), [Hengshuang Zhao](https://hszhao.github.io/), [Yu Liu](https://scholar.google.com/citations?user=8zksQb4AAAAJ), [Yingya Zhang](https://scholar.google.com/citations?user=16RDSEUAAAAJ), [Yujiu Yang](https://sites.google.com/view/iigroup-thu/about) <br />
 
 We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control framework for video generation. Wan-Move offers the following key features:
@@ -172,17 +172,19 @@ python generate.py \
 Looking forward to the Gradio launch soon to support everyone in freely creating their own videos.
 
 
-<!-- ## Citation
+## Citation
 If you find our work helpful, please cite us.
 
 ```
-@article{wan2025,
-      title={Wan: Open and Advanced Large-Scale Video Generative Models}, 
-      author={Team Wan and Ang Wang and Baole Ai and Bin Wen and Chaojie Mao and Chen-Wei Xie and Di Chen and Feiwu Yu and Haiming Zhao and Jianxiao Yang and Jianyuan Zeng and Jiayu Wang and Jingfeng Zhang and Jingren Zhou and Jinkai Wang and Jixuan Chen and Kai Zhu and Kang Zhao and Keyu Yan and Lianghua Huang and Mengyang Feng and Ningyi Zhang and Pandeng Li and Pingyu Wu and Ruihang Chu and Ruili Feng and Shiwei Zhang and Siyang Sun and Tao Fang and Tianxing Wang and Tianyi Gui and Tingyu Weng and Tong Shen and Wei Lin and Wei Wang and Wei Wang and Wenmeng Zhou and Wente Wang and Wenting Shen and Wenyuan Yu and Xianzhong Shi and Xiaoming Huang and Xin Xu and Yan Kou and Yangyu Lv and Yifei Li and Yijing Liu and Yiming Wang and Yingya Zhang and Yitong Huang and Yong Li and You Wu and Yu Liu and Yulin Pan and Yun Zheng and Yuntao Hong and Yupeng Shi and Yutong Feng and Zeyinzi Jiang and Zhen Han and Zhi-Fan Wu and Ziyu Liu},
-      journal = {arXiv preprint arXiv:2503.20314},
-      year={2025}
+@article{chu2025wan,
+      title={Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance},
+      author={Ruihang Chu and Yefei He and Zhekai Chen and Shiwei Zhang and Xiaogang Xu and Bin Xia and Dingdong Wang and Hongwei Yi and Xihui Liu and Hengshuang Zhao and Yu Liu and Yingya Zhang and Yujiu Yang},
+      year={2025},
+      eprint={2512.08765},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
-``` -->
+```
 
 ## License Agreement
 The models in this repository are licensed under the Apache 2.0 License. We claim no rights over the your generated contents, granting you the freedom to use them while ensuring that your usage complies with the provisions of this license. You are fully accountable for your use of the models, which must not involve sharing any content that violates applicable laws, causes harm to individuals or groups, disseminates personal information intended for harm, spreads misinformation, or targets vulnerable populations. For a complete list of restrictions and details regarding your rights, please refer to the full text of the [license](LICENSE.txt).
