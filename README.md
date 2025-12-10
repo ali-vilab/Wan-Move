@@ -1,9 +1,3 @@
-# Wan-Move
-
-<p align="center">
-    <img src="assets/wan-move-logo.png" alt="Stanford-Alpaca" style="width: 100%; min-width: 300px; display: block; margin: auto;">
-<p>
-
 # Wan-Move: Motion-controllable Video Generation via Latent Trajectory Guidance
 
 [![Paper](https://img.shields.io/badge/ArXiv-Paper-brown)](https://arxiv.org/abs/2512.08765)
