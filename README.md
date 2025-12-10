@@ -32,6 +32,10 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 * Dec 10, 2025: 👋 We've released the [inference code](#quickstart), [model weights](https://huggingface.co/Ruihang/Wan-Move-14B-480P), and [MoveBench](https://huggingface.co/datasets/Ruihang/MoveBench) of Wan-Move.
 * Sep 18, 2025: 👋 Wan-Move has been accepted by NeurIPS 2025! 🎉🎉🎉
 
+## Community Works
+### ComfyUI
+* Dec 10, 2025: Thanks Kijai for integrating Wan-Move into the ComfyUI wrapper: [https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove](https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove)
+
 
 ## 📑 Todo List
 - Wan-Move-480P
