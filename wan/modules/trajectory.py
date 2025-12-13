@@ -437,11 +437,16 @@ def add_weighted(rgb, track):
         
 def draw_tracks_on_video(video, tracks, visibility=None, track_frame=24):
     color_map = [
-        (102, 153, 255),
-        (0, 255, 255),
-        (255, 255, 0),
-        (255, 102, 204),
-        (0, 255, 0)
+        (102, 153, 255), # Blue-ish
+        (0, 255, 255),   # Cyan
+        (255, 255, 0),   # Yellow
+        (255, 102, 204), # Pink
+        (0, 255, 0),     # Green
+        (255, 0, 0),     # Red
+        (128, 0, 128),   # Purple
+        (255, 165, 0),   # Orange
+        (255, 255, 255), # White
+        (165, 42, 42)    # Brown
     ]
     circle_size = 12
     line_width = 16

@@ -101,7 +101,7 @@ class WanMove:
             tokenizer_path=os.path.join(checkpoint_dir, config.clip_tokenizer))
 
         logging.info(f"Creating WanModel from {checkpoint_dir}")
-        self.model = WanModel.from_pretrained(checkpoint_dir)
+        self.model = WanModel.from_pretrained(checkpoint_dir, torch_dtype=self.param_dtype)
         self.model.eval().requires_grad_(False)
 
         if t5_fsdp or dit_fsdp or use_usp:
@@ -212,6 +212,12 @@ class WanMove:
                 self.patch_size[2] * self.patch_size[2])
             h = lat_h * self.vae_stride[1]
             w = lat_w * self.vae_stride[2]
+
+        # Scale tracks to match the target video dimensions
+        scale_h = h / img.shape[1]
+        scale_w = w / img.shape[2]
+        track[..., 0] *= scale_w
+        track[..., 1] *= scale_h
 
         max_seq_len = ((F - 1) // self.vae_stride[0] + 1) * lat_h * lat_w // (
             self.patch_size[1] * self.patch_size[2])
