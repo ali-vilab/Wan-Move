@@ -42,7 +42,7 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
     - [x] Multi-GPU inference code of the 14B models
     - [x] Checkpoints of the 14B models
     - [x] Data and evaluation code of MoveBench
-    - [ ] Gradio demo
+    - [x] Gradio demo
 
 
 
@@ -167,7 +167,35 @@ python generate.py \
   --prompt "A laptop is placed on a wooden table. The silver laptop is connected to a small grey external hard drive and transfers data through a white USB-C cable. The video is shot with a downward close-up lens." \
   --save_file example.mp4
 ```
-Looking forward to the Gradio launch soon to support everyone in freely creating their own videos.
+#### Gradio Demo
+We provide a local Gradio demo for interactive trajectory drawing and video generation.
+
+1. **Launch the Demo**:
+```bash
+python gradio_app.py \
+    --task wan-move-i2v \
+    --size 480*832 \
+    --ckpt_dir ./Wan-Move-14B-480P \
+    --t5_cpu \
+    --offload_model True \
+    --dtype bf16 \
+    --port 7860 \
+    --share
+```
+
+2. **Features**:
+   *   **Multi-Trajectory Control**: Draw multiple trajectories with distinct colors.
+   *   **Speed Control**: Adjust the speed curve for each trajectory independently.
+   *   **Real-time Preview**: Visualize your drawn trajectories on the input image and as a GIF.
+   *   **Lazy Loading**: The model loads only when you start generation, ensuring fast startup.
+   *   **History Gallery**: View your previously generated videos.
+
+3. **Usage**:
+   *   Upload an image.
+   *   Click on the image to add trajectory points.
+   *   (Optional) Adjust the speed curve in the editor.
+   *   Select "Create New..." in the dropdown to add more trajectories.
+   *   Click "Generate Video".
 
 
 ## Citation
