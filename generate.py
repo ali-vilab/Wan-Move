@@ -224,6 +224,12 @@ def _parse_args():
         choices=["zh", "en"],
         default="zh",
         help="Language of captions/prompts. Choose from {'zh', 'en'}. Default is 'zh'.")
+    parser.add_argument(
+        "--dtype",
+        type=str,
+        default="bf16",
+        choices=["fp32", "fp16", "bf16"],
+        help="The precision to use for the model.")
     args = parser.parse_args()
 
     _validate_args(args)
@@ -322,6 +328,15 @@ def generate(args):
     cfg = WAN_CONFIGS[args.task]
     if args.ulysses_size > 1:
         assert cfg.num_heads % args.ulysses_size == 0, f"`{cfg.num_heads=}` cannot be divided evenly by `{args.ulysses_size=}`."
+
+    if args.dtype == "fp32":
+        cfg.param_dtype = torch.float32
+    elif args.dtype == "fp16":
+        cfg.param_dtype = torch.float16
+    elif args.dtype == "bf16":
+        cfg.param_dtype = torch.bfloat16
+    else:
+        raise ValueError(f"Unsupported dtype: {args.dtype}")
 
     logging.info(f"Generation job args: {args}")
     logging.info(f"Generation model config: {cfg}")
