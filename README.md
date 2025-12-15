@@ -29,6 +29,7 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 
 ## 🔥 Latest News!!
 
+* Dec 15, 2025: 👋 We've release a [local Gradio demo](#gradio-demo) for interactive trajectory drawing and video generation.
 * Dec 10, 2025: 👋 We've released the [inference code](#quickstart), [model weights](https://huggingface.co/Ruihang/Wan-Move-14B-480P), and [MoveBench](https://huggingface.co/datasets/Ruihang/MoveBench) of Wan-Move.
 * Sep 18, 2025: 👋 Wan-Move has been accepted by NeurIPS 2025! 🎉🎉🎉
 
@@ -129,9 +130,11 @@ python generate.py --task wan-move-i2v --size 480*832 --ckpt_dir ./Wan-Move-14B-
 # For multi-object motion test, run: 
 python generate.py --task wan-move-i2v --size 480*832 --ckpt_dir ./Wan-Move-14B-480P --mode multi --language en --save_path results/en --eval_bench
 ```
+
 > 💡Note:
 > * If you want to visualize the trajectory motion effect in our video demo, add the `--vis_track` flag. We also provide a separate visualization script, i.e., `scripts/visualize.py`, to support different visualization settings, for example, enabling mouse-button effects! 😊😊😊
 > * If you encounter OOM (Out-of-Memory) issues, you can use the `--offload_model True` and `--t5_cpu` options to reduce GPU memory usage.
+> * The 14B model can be run in a **single 40GB** GPU with `--t5_cpu --offload_model True --dtype bf16`! 🤗🤗🤗
 
 
 - Multi-GPU inference
