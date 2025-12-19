@@ -27,6 +27,8 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 
 - 📊 **Dedicated Motion-control Benchmark MoveBench**: MoveBench is a carefully curated benchmark with larger-scale samples, diverse content categories, longer video durations, and high-quality trajectory annotations.
 
+🙌 We’re glad to see Wan-Move being tested in real-world videos by many creators and users, with consistently positive feedback.
+
 ## 🔥 Latest News!!
 
 * Dec 15, 2025: 👋 We've released a [local Gradio demo](#gradio-demo) for interactive trajectory drawing and video generation.
@@ -34,8 +36,9 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 * Sep 18, 2025: 👋 Wan-Move has been accepted by NeurIPS 2025! 🎉🎉🎉
 
 ## Community Works
-### ComfyUI
-* Dec 10, 2025: Thank Kijai for integrating Wan-Move into the ComfyUI wrapper: [https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove](https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove)
+* **[ComfyUI]** Thank Kijai for integrating Wan-Move into the ComfyUI wrapper: [https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove](https://huggingface.co/Kijai/WanVideo_comfy_fp8_scaled/tree/main/WanMove)
+
+* Thanks deepbeepmeep for supporting Wan-Move in Wan2GP, requiring low VRAM for video generation: https://github.com/deepbeepmeep/Wan2GP
 
 
 ## 📑 Todo List
