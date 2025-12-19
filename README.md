@@ -27,7 +27,7 @@ We present our NeurIPS 2025 paper Wan-Move, a simple and scalable motion-control
 
 - 📊 **Dedicated Motion-control Benchmark MoveBench**: MoveBench is a carefully curated benchmark with larger-scale samples, diverse content categories, longer video durations, and high-quality trajectory annotations.
 
-🙌 We’re glad to see Wan-Move being tested in real-world videos by many creators and users, with consistently positive feedback.
+🙌 We’re glad to see Wan-Move being tested in real-world videos by many creators and users.
 
 ## 🔥 Latest News!!
 
