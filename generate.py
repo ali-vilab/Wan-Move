@@ -230,6 +230,12 @@ def _parse_args():
         choices=["zh", "en"],
         default="zh",
         help="Language of captions/prompts. Choose from {'zh', 'en'}. Default is 'zh'.")
+    parser.add_argument(
+        "--dtype",
+        type=str,
+        default="bf16",
+        choices=["fp32", "fp16", "bf16"],
+        help="The precision to use for the model.")
     args = parser.parse_args()
 
     _validate_args(args)
