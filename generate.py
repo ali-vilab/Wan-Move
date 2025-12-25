@@ -521,7 +521,7 @@ def generate(args):
             args.save_file = f"{args.task}_{args.size.replace('*','x') if sys.platform=='win32' else args.size}_{args.ulysses_size}_{args.ring_size}_{formatted_prompt}_{formatted_time}" + suffix
 
         if args.vis_track:
-            first_frame_repeat = torch.as_tensor(np.array(img)).permute(2,0,1).unsqueeze(0).unsqueeze(1).repeat(1, args.frame_num, 1, 1, 1)
+            first_frame_repeat = torch.as_tensor(np.array(img.resize((video.size(3), video.size(2)), resample=Image.BICUBIC))).permute(2,0,1).unsqueeze(0).unsqueeze(1).repeat(1, args.frame_num, 1, 1, 1)
             track_video = draw_tracks_on_video(first_frame_repeat, torch.from_numpy(track), torch.from_numpy(track_visibility))
             track_video = torch.stack([TF.to_tensor(frame) for frame in track_video], dim=0).permute(1,0,2,3).mul(2).sub(1).to(device)
             cache_video(
